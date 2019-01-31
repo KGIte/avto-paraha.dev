@@ -1,364 +1,348 @@
 <!DOCTYPE html>
-<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Autoškola Žižkov</title>
-    <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/sansus-webissimo" type="text/css"/>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Fira+Sans:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/style.css">
+    <title>Avtopod taxi</title>
 </head>
 <body>
     <header>
-        <div class="full-width">
-            <div class="half-width">
-                <div class="headerTop">
-                    <ol>
-                        <li><a class="logo" href="/"><img src="../img/logo.png" alt="logo"></a></li>
-                        <li>
-                            <nav>
-                                <ul>
-                                    <li><a href="#section1">Услуги и цены</a></li>
-                                    <li><a href="#section2">Начать</a></li>
-                                    <li><a href="#section3">Преимущества</a></li>
-                                    <li><a href="#section4">F.A.Q.</a></li>
-                                    <li><a href="#section5">Автопарк</a></li>
-                                    <li><a href="#section6">Контакты</a></li>
-                                    
-                                </ul>
-                            </nav>
-                        </li>
-                        <li>
-                            <div class="phoneSupport">
-                                <div id="tel"></div>
-                                <span>+420 777 092 350</span>
-                                <button onclick="modal()">Заказать звонок</button>
-                            </div>
-                        </li>
-                    </ol>
-                </div>
-                <div class="headerContent">
-                    <div class="left">
-                        <div class="banner">
-                            <div class="top">
-                                <h1>Супер акция</h1>
-                            </div>
-                            <div class="content">
-                                <p class="category">Категория "B"</p>
-                                <p class="price">Всего за<br>8900 крон</p>
-                                <p class="vLeft">Осталось всего 12 мест</p>
-                                <button class="startLesson">Начать обучение</button>
-                                <a href="">Или свяжитесь с менеджером<br>чтобы задать вопросы</a>
-                            </div>
+        <div class="container-fluid">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-1">
+                        <div class="logo">
+                            <a href="/"><img src="img/logo.svg" alt="Logo"></a>
                         </div>
                     </div>
-                    <div class="right">
-                        <h1>Легендарная автошкола в Праге</h1>
-                        <div class="car"></div>
+                    <div class="col-md-11">
+                        <div class="headerContainer">
+                            <ul>
+                                <li class="search">
+                                    <form action="" method="post">
+                                        <input class="searchPlace" type="text" name="search" id="searchPlace" placeholder="Поиск...">
+                                        <button class="searchSubmit" type="submit"><i class="fas fa-search"></i></button>
+                                    </form>
+                                </li>
+                                <li><div><button class="selectRegion" type="button" data-target-id="city-label">Россия</button></div></li>
+                                <li><a class="headerBtn createAnns" href="">Разместить объявление</a></li>
+                                <li><a class="headerBtn login" href="signin.html">Войти</a></li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
+                
             </div>
         </div>
     </header>
 
-    <div class="full-width mainSection">
-        <div id="section1" class="section">
-            <h2>Наши программы</h2>
-            <div class="half-width">
-                <div class="programs">
-                    <div class="card">
-                        <img src="./img/icons/program-car.svg" alt="icon">
-                        <h3>Обучение на автомобиль</h3>
-                        <a href="">от 8900 крон</a>
-                    </div>
-                    <div class="card">
-                        <img src="./img/icons/program-bike.svg" alt="icon">
-                        <h3>Обучение на мотоцикл</h3>
-                        <a href="">от 9500 крон</a>
-                    </div>
-                    <div class="card">
-                        <img src="./img/icons/program-licence.svg" alt="icon">
-                        <h3>Обмен прав старого образца</h3>
-                        <a href="">от 6000 крон</a>
-                    </div>
-                    <div class="card">
-                        <img src="./img/icons/program-bus.svg" alt="icon">
-                        <h3>Другие категории и услуги</h3>
-                        <a href="">от 5000 крон</a>
-                    </div>
-                    <div class="card">
-                        <img src="./img/icons/program-return.svg" alt="icon">
-                        <h3>Возврат прав</h3>
-                        <a href="">от 2500 крон</a>
-                    </div>
-                    <div class="card">
-                        <img src="./img/icons/program-wheel.svg" alt="icon">
-                        <h3>Вождение и парковка</h3>
-                        <a href="">от 350 крон</a>
-                    </div>
-                </div><!-- programs end -->
-                <a href="" class="btn btnProgram">Полный спектр услуг</a>
-            </div>
-        </div><!-- section1 end -->
-        
-        <div id="section2" class="section">
-            <h2>Что необходимо сделать, чтобы начать обучение в автошколе</h2>
-            <div class="half-width">
-                <div class="stepsBg"></div>
-                <div class="steps">
-                    <div class="step step1">
-                        <span class="number">1</span>
-                        <span class="write">Запишитесь на сайте</span>
-                        <img src="./img/icons/steps-pen.svg" alt="">
-                        <a href="" class="btn">Записаться</a>
-                    </div>
-                    <div class="step step2">
-                        <span class="number">2</span>
-                        <span class="write">Заполните бланк у врача</span>
-                        <img src="./img/icons/steps-blank.svg" alt="">
-                        <a href="" class="btn">Скачать бланк</a>
-                    </div>
-                    <div class="step step3">
-                        <span class="number">3</span>
-                        <span class="write">Приходите на первое занятие</span>
-                        <img src="./img/icons/steps-like.svg" alt="">
-                        <a href="#tel" class="transparentButton">Записаться по тел:<br> <span>+420 777 092 350</span></a>
-                    </div>
-                </div>
-            </div>
-        </div><!-- section2 end -->
-        
-        <div id="section3" class="section">
-            <h2>Преимущества автошколы</h2>
-           <div class="half-width">
-                <div class="advantages">
-                    <div class="items item1">
-                        <span class="icon"><img src="./img/icons/advantage-medal.svg" alt=""></span>
-                        <div class="content">
-                            <h4 class="title">Обучаем с 1998 года</h4>
-                            <p class="text">Более 12 тысяч подготовленных водителей</p>
-                        </div>
-                    </div>
-                    <div class="items item2">
-                        <span class="icon"><img src="./img/icons/advantage-3.svg" alt=""></span>
-                        <div class="content">
-                            <h4 class="title">2 филиала в Праге</h4>
-                            <p class="text">Занятия в удобное для вас время</p>
-                        </div>
-                    </div>
-                    <div class="items item3">
-                        <span class="icon"><img src="./img/icons/advantage-tick.svg" alt=""></span>
-                        <div class="content">
-                            <h4 class="title">Опытные инструктора</h4>
-                            <p class="text">Гарантия качества</p>
-                        </div>
-                    </div>
-                    <div class="items item4">
-                        <span class="icon"><img src="./img/icons/advantage-hat.svg" alt=""></span>
-                        <div class="content">
-                            <h4 class="title">Подготовка к экзамену</h4>
-                            <p class="text">Студенты уверенно сдают экзамен</p>
-                        </div>
-                    </div>
-                    <div class="items item5">
-                        <span class="icon"><img src="./img/icons/advantage-time.svg" alt=""></span>
-                        <div class="content">
-                            <h4 class="title">Обучение в рассрочку</h4>
-                            <p class="text">Оплата в 2 части</p>
-                        </div>
-                    </div>
-                    <div class="items item6">
-                        <span class="icon"><img src="./img/icons/advantage-timer.svg" alt=""></span>
-                        <div class="content">
-                            <h4 class="title">Интенсивные курсы</h4>
-                            <p class="text">Обучение за 20 дней</p>
-                        </div>
-                    </div>
-                    <div class="items item7">
-                        <span class="icon"><img src="./img/icons/advantage-support.svg" alt=""></span>
-                        <div class="content">
-                            <h4 class="title">Женщина-инструктор</h4>
-                            <p class="text">Возможно обучение с женщиной</p>
-                        </div>
-                    </div>
-                    <div class="items item8">
-                        <span class="icon"><img src="./img/icons/advantage-ru.svg" alt=""></span>
-                        <div class="content">
-                            <h4 class="title">Обучение на русском</h4>
-                            <p class="text">Теоретические занятия на чешском и русском</p>
-                        </div>
-                    </div>
-                </div>
-           </div>
-        </div><!-- section3 end -->
-        
-        <div id="section4" class="section alt-bg">
-            <div class="half-width">
-                <div class="bestChoiseRow">
-                    <div class="col">
-                        <h4 class="title long">Лучший выбор по данным портала</h4>
-                        <img src="./img/best-choise-autostudy.png" alt="" class="logo">
-                    </div>
-                    <div class="col">
-                        <h4 class="title">О нас писали</h4>
-                        <div class="logos">
-                            <img src="./img/best-choise-around-prague.png" alt="" class="logo">
-                            <img src="./img/best-choise-420.png" alt="" class="logo">
-                            <img src="./img/best-choise-idnes.png" alt="" class="logo">
-                        </div>
-                        
-                    </div>
-                </div>
-            </div>
-        </div><!-- section4 end -->
-
-        <div id="section5" class="section">
-            <h2>Наш автопарк и филиал</h2>
-            <div class="half-width">
-                <p class="ourAutoparkText">Успешно работаем с 1998 года!</p>
-                
-                <div class="slider">
-                    <img src="./img/slider/auto-slider-1.jpg" alt="" class="slide">
-                    <img src="./img/slider/auto-slider-2.jpg" alt="" class="slide">
-                    <img src="./img/slider/auto-slider-3.jpg" alt="" class="slide">
-                    <img src="./img/slider/auto-slider-4.jpg" alt="" class="slide">
-                </div>
-                <p class="ourAutoparkText">Машины: Opel Corsa, Skoda Fabia, Fiat, Octavia</p>
-            </div>
-        </div><!-- section4 end -->
-        
-        <div id="section6" class="section alt-bg">
-            <h2>Работаем по всей Праге</h2>
-            <div class="half-width">
-                <p class="ourAutoparkText">Автошкола Zizkov является семейной фирмой и обучает на все категории вождения. Мы находимся близко к центру, до офиса можно добраться от ст. Florence (автобусом 207), Naměsti Republiky (трам.15), Želivského (трам. 11) до остановки Ohrada</p>
-                <p class="ourAutoparkText">Большая просьба перед тем, как прийти в офис сначала записаться по телефону +420777092350</p>
-                
-            </div>
-            <div class="map">
-                <iframe class="map__google-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2559.8338920056485!2d14.463636115718327!3d50.08939677942719!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470b935eebfa6dbd%3A0x20fe4369888da8b9!2zUm9ow6HEjW92YSAxNjA5LzEwOSwgMTMwIDAwIFByYWhhIDMtxb1pxb5rb3Y!5e0!3m2!1sen!2scz!4v1521750721414" allowfullscreen=""></iframe>
-            </div>
-            <p class="ourAutoparkText mb">Roháčova 109/1609</p>
-            <p class="ourAutoparkText mt">Praha 3 - Žizkov</p>
-            <a href="" class="btn">Записаться</a>
-        </div><!-- section5 end -->
-        
-        <div id="section7" class="section">
-            <h2>Отзывы выпускников</h2>
-            <div class="slider">
-                <div class="all">
-                    <input checked type="radio" name="respond" id="desktop">
-                    <article id="slider">
-                            <input checked type="radio" name="slider" id="switch1">
-                            <input type="radio" name="slider" id="switch2">
-                            <input type="radio" name="slider" id="switch3">
-                            <input type="radio" name="slider" id="switch4">
-                            <input type="radio" name="slider" id="switch5">
-                        <div id="slides">
-                            <div id="overflow">
-                                <div class="item">
-                                    <article>
-                                        <a>
-                                            <div class="feedbackCard">
-                                                <div class="feedback">
-                                                    <p>“Я закончила эту автошколу. Инструктора супер, коммуникабельные. Никакого дискомфорта не ощущала, быстро сдала экзамены! Осталась довольна на 100%!”</p>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </article>
-                                    <article>
-                                        <a>
-                                            <div class="feedbackCard">
-                                                <div class="feedback">
-                                                    <p>“Я в этой автошколе училась. Хорошее обучение. Со всеми документами помогают. Машины в хорошем состоянии.”</p>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </article>
-                                    <article>
-                                        <a>
-                                            <div class="feedbackCard">
-                                                <div class="feedback">
-                                                    <p>“Замечательная школа!!! Всем советую, особенно пани Клаузову - у нее колоссальное терпение и потрясающее чувство юмора))) Научит водить всех на "раз-два"!”</p>
-                                                </div>
-                                            </div>
-                                        </a> 
-                                    </article>
-                                    <article>
-                                        <a>
-                                            <div class="feedbackCard">
-                                                <div class="feedback">
-                                                    <p>“Подтверждаю, очень хорошая школа и хорошие инструкторы)) с 1 раза все сдал)”</p>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </article>
-                                    <article>
-                                        <a>
-                                            <div class="feedbackCard">
-                                                <div class="feedback">
-                                                    <p>“Училась с Клаузовой, офигенная! Познакомилась и с другими учителями, все позитивные! Это самое главное, нет ворчунов, все очень милые) Советую всем!”</p>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </article>
+    <div class="mainContainer">
+        <div class="container">
+            <div class="content">
+                <div class="mainContent">
+                    <h3 class="bannerName">Последние поиски</h3>
+                    <div class="sortBlock block">
+                        <form action="" method="">
+                            <div class="checkBoxs">
+                                <ul>
+                                    <li class="checkboxItem item1">
+                                        <label class="checkbox">
+                                            <input type="checkbox">
+                                            <span class="box"></span>Аренда
+                                        </label>
+                                    </li>
+                                    <li class="checkboxItem item2">
+                                        <label class="checkbox">
+                                            <input type="checkbox">
+                                            <span class="box"></span>Аренда с выкупом 
+                                        </label>
+                                    </li>
+                                    <li class="checkboxItem item3">
+                                        <label class="checkbox">
+                                            <input type="checkbox">
+                                            <span class="box"></span>Лизинг 
+                                        </label>
+                                    </li>
+                                    <li class="checkboxItem item4">
+                                        <label class="checkbox">
+                                            <input type="checkbox">
+                                            <span class="box"></span>В наличии 
+                                        </label>
+                                    </li>
+                                    <li class="checkboxItem item5">
+                                        <label class="checkbox">
+                                            <input type="checkbox">
+                                            <span class="box"></span>Проверен по VIN
+                                        </label>
+                                    </li>
+                                </ul>
+                            </div> <!-- CHECKBOXS END-->
+                            <hr>
+                            <div class="sortContent">
+                                <div class="selectForm">
+                                    <select id="" class="select" name="carModel">
+                                        <option value="0">Все марки</option>
+                                        <option value="">Отечественные</option>
+                                        <option value="">Иномарки</option>
+                                        <optgroup label="Популярные">
+                                            <option value="">Audi</option>
+                                            <option value="">BMW</option>
+                                            <option value="">Citroen</option>
+                                            <option value="">Ford</option>
+                                            <option value="">Honda</option>
+                                            <option value="">Mercedes</option>
+                                        </optgroup>
+                                        <hr>
+                                        <optgroup label="Все">
+                                            <option value="">AC</option>
+                                            <option value="">Acura</option>
+                                            <option value="">Adler</option>
+                                            <option value="">Ford</option>
+                                            <option value="">Honda</option>
+                                            <option value="">Mercedes</option>
+                                        </optgroup>
+                                    </select>
+                                </div>
+                                <div class="selectForm">
+                                    <select id="" class="select" name="carClass">
+                                        <option value="0">Все модели</option>
+                                        <option value="">Отечественные</option>
+                                        <option value="">Иномарки</option>
+                                        <optgroup label="Популярные">
+                                            <option value="">Audi</option>
+                                            <option value="">BMW</option>
+                                            <option value="">Citroen</option>
+                                            <option value="">Ford</option>
+                                            <option value="">Honda</option>
+                                            <option value="">Mercedes</option>
+                                        </optgroup>
+                                        <hr>
+                                        <optgroup label="Все">
+                                            <option value="">AC</option>
+                                            <option value="">Acura</option>
+                                            <option value="">Adler</option>
+                                            <option value="">Ford</option>
+                                            <option value="">Honda</option>
+                                            <option value="">Mercedes</option>
+                                        </optgroup>
+                                    </select>
+                                </div>
+                                <div class="selectForm">
+                                    <select id="" class="select" name="carClass">
+                                        <option value="0">Все поколения</option>
+                                        <option value="">Отечественные</option>
+                                        <option value="">Иномарки</option>
+                                        <optgroup label="Популярные">
+                                            <option value="">Audi</option>
+                                            <option value="">BMW</option>
+                                            <option value="">Citroen</option>
+                                            <option value="">Ford</option>
+                                            <option value="">Honda</option>
+                                            <option value="">Mercedes</option>
+                                        </optgroup>
+                                        <hr>
+                                        <optgroup label="Все">
+                                            <option value="">AC</option>
+                                            <option value="">Acura</option>
+                                            <option value="">Adler</option>
+                                            <option value="">Ford</option>
+                                            <option value="">Honda</option>
+                                            <option value="">Mercedes</option>
+                                        </optgroup>
+                                    </select>
+                                </div>
+                                <div class="sortInput">
+                                    <input type="text" placeholder="Цена от...">
+                                    <input type="text" placeholder="до">
+                                </div>
+                                <div class="sortInput">
+                                    <input type="text" placeholder="Год, от...">
+                                    <input type="text" placeholder="до">
+                                </div>
+                                <div class="sortInput">
+                                    <input type="text" placeholder="Пробег от, км...">
+                                    <input type="text" placeholder="до">
+                                </div>
+                                <div class="sortInput">
+                                    <input type="text" placeholder="Пробег от, км...">
+                                    <input type="text" placeholder="до">
+                                </div>
+                                <div class="selectForm">
+                                    <select id="" class="select" name="carClass">
+                                        <option value="0">Все поколения</option>
+                                        <option value="">Отечественные</option>
+                                        <option value="">Иномарки</option>
+                                        <optgroup label="Популярные">
+                                            <option value="">Audi</option>
+                                            <option value="">BMW</option>
+                                            <option value="">Citroen</option>
+                                            <option value="">Ford</option>
+                                            <option value="">Honda</option>
+                                            <option value="">Mercedes</option>
+                                        </optgroup>
+                                        <hr>
+                                        <optgroup label="Все">
+                                            <option value="">AC</option>
+                                            <option value="">Acura</option>
+                                            <option value="">Adler</option>
+                                            <option value="">Ford</option>
+                                            <option value="">Honda</option>
+                                            <option value="">Mercedes</option>
+                                        </optgroup>
+                                    </select>
+                                </div>
+                                <div class="selectForm">
+                                    <select id="" class="select" name="carClass">
+                                        <option value="0">Все поколения</option>
+                                        <option value="">Отечественные</option>
+                                        <option value="">Иномарки</option>
+                                        <optgroup label="Популярные">
+                                            <option value="">Audi</option>
+                                            <option value="">BMW</option>
+                                            <option value="">Citroen</option>
+                                            <option value="">Ford</option>
+                                            <option value="">Honda</option>
+                                            <option value="">Mercedes</option>
+                                        </optgroup>
+                                        <hr>
+                                        <optgroup label="Все">
+                                            <option value="">AC</option>
+                                            <option value="">Acura</option>
+                                            <option value="">Adler</option>
+                                            <option value="">Ford</option>
+                                            <option value="">Honda</option>
+                                            <option value="">Mercedes</option>
+                                        </optgroup>
+                                    </select>
+                                </div>
+                                <div class="gridFullContent">
+                                    <button class="sortResult" type="submit">Показать <span class="sortValue">3521457</span> результатов</button>
+                                </div>
+                                <div class="popularModels gridFullContent">
+                                    <a href="" class="carModel">Audi</a>
+                                    <a href="" class="carModel">Kia</a>
+                                    <a href="" class="carModel">Lada Granda</a>
+                                    <a href="" class="carModel">Opel</a>
+                                    <a href="" class="carModel">BMW</a>
+                                    <a href="" class="carModel">Ford</a>
+                                    <a href="" class="carModel">Honda</a>
+                                    <a href="" class="carModel">Skoda</a>
+                                    <a href="" class="carModel">Mazda</a>
+                                    <a href="" class="carModel">ВАЗ(LADA)</a>
+                                    <a href="" class="carModel">ЗАЗ</a>
+                                    <a href="" class="carModel">ГАЗ</a>
+                                    <a href="" class="carModel">Austin</a>
+                                    <a href="" class="carModel">Hyundai</a>
+                                    <a href="" class="carModel">Toyota</a>
+                                    <a href="" class="carModel">Honda</a>
+                                    <a href="" class="carModel">Nissan</a>
+                                    <a href="" class="carModel"></a>
+                                    <a href="" class="carModel"></a>
+                                    <a href="" class="carModel"></a>
                                 </div>
                             </div>
+                        </form>
+                    </div> <!-- SORT BLOCK END-->
+                    <div class="cars">
+                        <div class="car">
+                            <div class="carImg">
+                                <img src="./img/carSlider/8b7a765e17284b0783a51e791e9ab1b5.jpg" alt="">
+                            </div>
+                            <div class="carDescription block">
+                                <a class="carName boostx5" href=""><h4>Nissan Pathfinder, R51</h4></a>
+                                <span class="createTime">Добавлен <span class="time"> 26 </span>минут назад</span>
+                                <div class="carPrice">
+                                    <p class="price"><span class="PriceRUB">20 000</span> в сутки</p>
+                                </div>
+                                <div class="carSP">
+                                    <p class="spefication">185 000 км</p>
+                                    <p class="spefication">2006 г.</p>
+                                    <p class="spefication">2.5 л, Дизель</p>
+                                    <p class="spefication">174 л.с.</p>
+                                    <p class="spefication">Внедорожник</p>
+                                    <p class="spefication">Автомат</p>
+                                    <div class="carSpetifications">
+                                        <div class="vinChek">VIN проверен</div>
+                                        <div class="best">Лучшая комплектация</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> <!-- CAR END -->
+                        <div class="car">
+                            <div class="carImg">
+                                    <img src="./img/carSlider/88ea5c6c58d94e6ebf59742d1966a05c.jpg" alt="">
+                            </div>
+                            <div class="carDescription block">
+                                <a class="carName boostx20" href=""><h4>Daewoo Nexia, 1 поколение [рестайлинг]</h4></a>
+                                <span class="createTime">Добавлен <span class="time"> 32 </span>минут назад</span>
+                                <div class="carPrice">
+                                    <p class="price"><span class="PriceRUB">7 000</span> в сутки</p>
+                                </div>
+                                <div class="carSP">
+                                    <p class="spefication">250 000 км</p>
+                                    <p class="spefication">2004 г.</p>
+                                    <p class="spefication">1.5 л, Бензин</p>
+                                    <p class="spefication">75 л.с.</p>
+                                    <p class="spefication">Седан</p>
+                                    <p class="spefication">Механика</p>
+                                    <div class="carSpetifications">
+                                        <div class="vinChek">VIN проверен</div>
+                                        <div class="best">Лучшая комплектация</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> <!-- CAR END -->
+                    </div><!-- CARS BLOCK END-->
+                </div> <!-- MAIN CONTENT END -->
+
+                <div class="sidebar">
+                    <div class="reclam block"><div class="place"><p class="reclamExamle">250px x 400px</p></div></div>
+                    <div class="VIP block">
+                        <h3><span>VIP-</span>объявления</h3>
+                        <div class="cars item1">
+                            <a href="">
+                                <img src="./img/carIcons/9a0369b4426c9f8401e63084677f5799.jpg" alt="IMG"><span class="carModel">
+                                <span class="carModel">Toyota Corona <span calss="carOLD">1992</span></span>
+                                <h4 class="price">15 000 <span>сутки</span></h4>
+                            </a>
                         </div>
-                        <div id="controls">
-                            <label for="switch1"></label>
-                            <label for="switch2"></label>
-                            <label for="switch3"></label>
-                            <label for="switch4"></label>
-                            <label for="switch5"></label>
+                        <div class="cars item2">
+                            <a href="">
+                                <img src="./img/carIcons/e756de84f85a27b495e439648927b042.jpg" alt="IMG"><span class="carModel">
+                                <span class="carModel">Hyundai Solaris <span calss="carOLD">2011</span></span>
+                                <h4 class="price">20 000 <span>сутки</span></h4>
+                            </a>
                         </div>
-                        <div id="active">
-                            <label for="switch1"></label>
-                            <label for="switch2"></label>
-                            <label for="switch3"></label>
-                            <label for="switch4"></label>
-                            <label for="switch5"></label>
-                        </div>
-                    </article>
-                </div>
+                    </div>
+                </div> <!-- SIDEBAR END -->
             </div>
-        </div><!-- section6 end -->
+        </div>
+        
     </div>
 
     <footer>
-        <div class="full-width">
-            <div class="half-width">
+        <div class="container-fluid footerbg">
+            <div class="container">
                 <div class="footerContent">
-                    <div class="footerItem item1">
-                        <a href="/"><img src="../img/logo.png" alt="logo"></a>
-                    </div>
-                    <div class="footerItem item2">
-                        <p>Узнайте о новых акциях и скидках на соц.сетях</p>
-                        <div class="socialMediaLinks">
-                            <a href="#" class="socialMediaLink vk"></a>
-                            <a href="#" class="socialMediaLink fb"></a>
+                    <div class="content">
+                        <div class="copy">
+                            <p>Copyright &copy; Автопод TAXI &mdash; 2019</p>
                         </div>
-                        
-                    </div>
-                    <div class="footerItem item3">
-                        <p>Появился вопрос?</p>
-                        <p>Будем рады Вам помочь!</p>
-                        <div class="buttons">
-                            <a href="" class="btn">Написать нам</a>
-                            <a href="" class="btn">Обратная связь</a>
+                        <div class="fMainContent">
+                            <a href="">Лицензионное соглашение</a>
+                            <a href="">Помощь</a>
                         </div>
-                    </div>
-                    <div class="footerItem item4">
-                        <ul class="contacts"><p>Наши контакты:</p>
-                            <li class="tel">+420777092350</li>
-                            <li class="email"><a href="mailto:info@avtoskola.cz">info@avtoskola.cz</a></li>
-                        </ul>
                     </div>
                 </div>
             </div>
         </div>
     </footer>
     
-   <script src="js/libs.min.js"></script>
-   <script src="js/common.js"></script>
+    <script src="js/libs.min.js"></script>
 </body>
 </html>
